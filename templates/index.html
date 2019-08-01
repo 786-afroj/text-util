@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>template is working</title>
+<style>
+body{
+ background-color:#f1f1a1;
+}
+.container{
+  border:2px solid black;
+  margin-left:300px;
+  margin-right:300px;
+  background-color:#f1f1f1;
+  
+}
+</style>
+</head>
+<body>
+<center><h1>Welcome to the text analyazer.Enter your text below</h1></center>
+<form action='/analyze' method='get' class="container">
+   <textarea name='text' ></textarea><br/>
+   <input type="checkbox" name="removepunc">Remove Punctuations<br/>
+   <input type="checkbox" name="fullcaps">UPPERCASE<br/>
+   <input type="checkbox" name="newlineremover">New Line Remove<br/>
+   <input type="checkbox" name="extraspaceremover">Extra space Remove<br/>
+   <input type="checkbox" name="charcouter">character couter<br/>
+   <input type="checkbox" name="wordcount">word couter<br/>
+   <button type='submit'>Analyze text</button>
+</form>
+</body>
+</html>
